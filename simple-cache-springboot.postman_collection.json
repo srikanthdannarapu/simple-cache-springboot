@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "a84bee66-ba51-46b7-8144-0bcbda4d00c9",
+		"name": "simple-cache-springboot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8082/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"sdannarapu@gmail.com\",\n\t\"subject\": \"Second Format Examples\",\n\t\"body\": \"Hi Srikanth, <br><br><br> Keep your letter short. Two or three paragraphs and a single page is sufficient, leaving room for your signature at the bottom of the letter. <br><br><br> Choose a simple font like Times New Roman, Arial, or Calibri. A 12 point font size is easy to read.  <br><br><br> Cheers,<br> Srikanth\",\n\t\"dateTime\":\"2019-06-09T10:34:00\",\n\t\"timeZone\":\"Asia/Kolkata\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
